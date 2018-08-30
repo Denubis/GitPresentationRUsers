@@ -3,30 +3,30 @@
 
 % Slide Masters:
 
-%	Title
-%	Text
-%	2 column
-%	Full-image
-%	Non-branded
-%	Bibliography
-%	Closing
+% Title
+% Text
+% 2 column
+% Full-image
+% Non-branded
+% Bibliography
+% Closing
 
-\documentclass[aspectratio=169]{beamer} % Aspect ratio
+\documentclass[aspectratio=1610]{beamer} % Aspect ratio
 % https://tex.stackexchange.com/a/14339/5483 
 % Possible values: 1610, 169, 149, 54, 43 and 32.
 % 169 = 16:9
 
 \usetheme{macquarie}
 
-\usepackage[english]{babel}				% Set language
-\usepackage[utf8x]{inputenc}			% Set encoding
+\usepackage[english]{babel}       % Set language
+\usepackage[utf8x]{inputenc}      % Set encoding
 
-\mode<presentation>						% Set options
+\mode<presentation>           % Set options
 {
-  \usetheme{default}					% Set theme
-  \usecolortheme{default} 				% Set colors
-  \usefonttheme{default}  				% Set font theme
-  \setbeamertemplate{caption}[numbered]	% Set caption to be numbered
+  \usetheme{default}          % Set theme
+  \usecolortheme{default}         % Set colors
+  \usefonttheme{default}          % Set font theme
+  \setbeamertemplate{caption}[numbered] % Set caption to be numbered
 }
 
 % Uncomment this to have the outline at the beginning of each section highlighted.
@@ -37,14 +37,14 @@
 %  \end{frame}
 %}
 
-\usepackage{graphicx}					% For including figures
-\usepackage{booktabs}					% For table rules
-\usepackage{hyperref}					% For cross-referencing
+\usepackage{graphicx}         % For including figures
+\usepackage{booktabs}         % For table rules
+\usepackage{hyperref}         % For cross-referencing
 
-\title{Title for a minimal beamer presentation}	% Presentation title
-\author{Author One}								% Presentation author
-\institute{Name of institution}					% Author affiliation
-\date{\today}									% Today's date	
+\title{What is Git and Why is it Awesome?} % Presentation title
+\author{Brian Ballsun-Stanton}               % Presentation author
+\institute{Solutions Architect (Digital Humanities), Faculty of Arts}         % Author affiliation
+\date{\today\\CC-BY\\https://github.com/Denubis/GitPresentationRUsers}                 % Today's date  
 
 \begin{document}
 
@@ -66,56 +66,82 @@
 % The slide structure is as follows:
 %
 %\begin{frame}{<slide-title>}
-%	<content>
+% <content>
 %\end{frame}
 
-\section{Section One}
+\section{Concepts to untangle}
 
-\begin{frame}{Slide with bullet points}
-	This is a bullet list of two points:
+\begin{frame}{These things are different}
+  
     \begin{itemize}
-		\item Point one
-        \item Point two
-	\end{itemize}
+    \item Git
+    \item Repository
+    \item a DVCS
+    \item A Remote Repository (Service)
+    \item Extra Stuff
+  \end{itemize}
 \end{frame}
 
-\begin{frame}{Slide with two columns}
-	\begin{columns}
-		\column{.5\textwidth}
-        Text goes in first column.
+
+\begin{frame}{Git}
+  
+    \begin{itemize}
+    \item Invented by Torvalds in 2005
+    \item A response to prior version control systems that didn't scale
+    \item Very counterintiutive terminology
+    \item Looks scary    
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Repository}
+  
+    \begin{itemize}
+    \item A self-contained ``light-cone'' of code, stretching into the past with changes
+    \item Able to talk to other repositories containing the same code by exchanging ``commits''
+    \item Every repository is master of its own fate, and all language and operations around the repository reflects that
+    \item Very different from a centralised version control system
+    \item Complete opposite of Dropbox, which are centralised file stores. No risk of clobbering here.
+  \end{itemize}
+\end{frame}
+
+
+% \begin{frame}{Slide with two columns}
+%   \begin{columns}
+%     \column{.5\textwidth}
+%         Text goes in first column.
         
-        \column{.5\textwidth}
-        Text goes in second column
-	\end{columns}
-\end{frame}
+%         \column{.5\textwidth}
+%         Text goes in second column
+%   \end{columns}
+% \end{frame}
 
-\section{Section Two}
+% \section{Section Two}
 
-\begin{frame}{Slide with table}
-	\input{tables/table1.tex}
-\end{frame}
+% \begin{frame}{Slide with table}
+%   \input{tables/table1.tex}
+% \end{frame}
 
-\begin{frame}{Slide with figure}
-	\begin{figure}[H]
-		\centering
-        \includegraphics[width=.5\textwidth]{demo/logo.eps}
-        \caption{Caption for figure one.}
-        \label{fig:figure1}
-	\end{figure}
-\end{frame}
+% \begin{frame}{Slide with figure}
+%   \begin{figure}[H]
+%     \centering
+%         \includegraphics[width=.5\textwidth]{demo/logo.eps}
+%         \caption{Caption for figure one.}
+%         \label{fig:figure1}
+%   \end{figure}
+% \end{frame}
 
-\begin{frame}{Slide with references}
-	This is to reference a figure (Figure \ref{fig:figure1})\\
-    This it to reference a table (Table \ref{tab:table1})\\
-    This is to cite an article \cite{Ahmed2018a}\\
-    This is to add an article to the references without mentioning in the text \nocite{Ahmed2018a}\\
-\end{frame}
-\section{References}
+% \begin{frame}{Slide with references}
+%   This is to reference a figure (Figure \ref{fig:figure1})\\
+%     This it to reference a table (Table \ref{tab:table1})\\
+%     This is to cite an article \cite{Ahmed2018a}\\
+%     This is to add an article to the references without mentioning in the text \nocite{Ahmed2018a}\\
+% \end{frame}
+% \section{References}
 
-% Adding the option 'allowframebreaks' allows the contents of the slide to be expanded in more than one slide.
-\begin{frame}[allowframebreaks]{References}
-	\tiny\bibliography{references}
-	\bibliographystyle{apalike}
-\end{frame}
+% % Adding the option 'allowframebreaks' allows the contents of the slide to be expanded in more than one slide.
+% \begin{frame}[allowframebreaks]{References}
+%   \tiny\bibliography{references}
+%   \bibliographystyle{apalike}
+% \end{frame}
 
 \end{document}
