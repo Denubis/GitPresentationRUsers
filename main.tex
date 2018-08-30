@@ -44,16 +44,14 @@
 \title{What is Git and Why is it Awesome?} % Presentation title
 \author{Brian Ballsun-Stanton}               % Presentation author
 \institute{Solutions Architect (Digital Humanities), Faculty of Arts}         % Author affiliation
-\date{\today\\CC-BY\\https://github.com/Denubis/GitPresentationRUsers}                 % Today's date  
+\date{\today\\CC-BY\\https://github.com/Denubis/GitPresentationRUsers/main.pdf}                 % Today's date  
 
 \begin{document}
 
 % Title page
 % This page includes the informations defined earlier including title, author/s, affiliation/s and the date
 \begin{frame}
-  \titlepage
-
-  
+  \titlepage  
 \end{frame}
 
 % Outline
@@ -96,52 +94,151 @@
 \begin{frame}{Repository}
   
     \begin{itemize}
-    \item A self-contained ``light-cone'' of code, stretching into the past with changes
-    \item Able to talk to other repositories containing the same code by exchanging ``commits''
-    \item Every repository is master of its own fate, and all language and operations around the repository reflects that
+    \item A self-contained ``light-cone'' of code
+    \item Able to talk to other repositories by exchanging ``commits''
+    \item Every repository is master of its own fate
     \item Very different from a centralised version control system
-    \item Complete opposite of Dropbox, which are centralised file stores. No risk of clobbering here.
+    \item Complete opposite of Dropbox
   \end{itemize}
 \end{frame}
 
 
-% \begin{frame}{Slide with two columns}
-%   \begin{columns}
-%     \column{.5\textwidth}
-%         Text goes in first column.
-        
-%         \column{.5\textwidth}
-%         Text goes in second column
-%   \end{columns}
-% \end{frame}
+\begin{frame}{Remote repositories}
+  
+    \begin{itemize}
+    \item Github
+    \item Gitlab
+    \item Bitbucket
 
-% \section{Section Two}
+  \end{itemize}
+\end{frame}
 
-% \begin{frame}{Slide with table}
-%   \input{tables/table1.tex}
-% \end{frame}
+\begin{frame}{Extra Stuff}
+  
+    \begin{itemize}
+    \item Git(hub/lab) Pages.io
+    \item Large file store
+    \item Continuous Integration
 
-% \begin{frame}{Slide with figure}
-%   \begin{figure}[H]
-%     \centering
-%         \includegraphics[width=.5\textwidth]{demo/logo.eps}
-%         \caption{Caption for figure one.}
-%         \label{fig:figure1}
-%   \end{figure}
-% \end{frame}
 
-% \begin{frame}{Slide with references}
-%   This is to reference a figure (Figure \ref{fig:figure1})\\
-%     This it to reference a table (Table \ref{tab:table1})\\
-%     This is to cite an article \cite{Ahmed2018a}\\
-%     This is to add an article to the references without mentioning in the text \nocite{Ahmed2018a}\\
-% \end{frame}
-% \section{References}
+  \end{itemize}
+\end{frame}
 
-% % Adding the option 'allowframebreaks' allows the contents of the slide to be expanded in more than one slide.
-% \begin{frame}[allowframebreaks]{References}
-%   \tiny\bibliography{references}
-%   \bibliographystyle{apalike}
-% \end{frame}
+
+\begin{frame}{Why do we care?}
+  
+    \begin{itemize}
+    \item Able to track changes,  
+    \item On sets of files over time,
+    \item With descriptive summaries!
+
+  \end{itemize}
+\end{frame}
+
+\section{Scenarios for Awesomeness}
+
+
+\begin{frame}{Thesis Work}
+  
+  \begin{itemize}
+    \item https://github.com/Denubis/AskingAboutData
+    \item https://github.com/petrajanouchova/dis\_context
+    \begin{itemize}
+        \item Reverting my bad changes:
+      \item https://github.com/petrajanouchova/dis\_context/\\commit/3618ccc89149b6188fdeb4281c8da3a8df627ace
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Papers and Presentations}
+  
+    \begin{itemize}
+    \item https://github.com/FAIMS/OpenDataSympathetic-Presentation/blob/master/presentation.pdf
+    \item https://github.com/FAIMS/FAIMS-Mobile-Flexible-open-source-software-for-field-research
+    \item Journal based uses:
+    \begin{itemize}
+      \item Open peer review: https://github.com/OpenScienceMOOC/Module-7-Open-Evaluation
+      \item An entire journal: https://github.com/sx-archipelagos/sxa
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Code and Experiments}
+  
+  \begin{itemize}
+    \item https://github.com/FAIMS
+    \begin{itemize}  
+      \item This code at this point in time: https://github.com/FAIMS/faims-web/releases/tag/ElsevierSOFTX-124 
+      \item Supports this paper: https://www.sciencedirect.com/science/article/pii/S2352711017300869
+    \end{itemize}    
+    \item https://github.com/Alveo
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Static Websites}
+  
+  \begin{itemize}
+    \item https://github.com/orgs/BeniHassanResearchGroup/dashboard 
+    \begin{itemize}
+      \item -> www.benihassan.com
+    \end{itemize}
+    \item https://github.com/orgs/mqTeXUsers/dashboard 
+    \begin{itemize}
+      \item -> mqtexusers.github.io
+    \end{itemize}
+    \item https://github.com/orgs/MacquarieAustralianHistoryMuseum/dashboard 
+    \begin{itemize}
+      \item -> objectbasedlearning.com
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\section{Activities}
+
+
+\begin{frame}{Signing up under an education link}
+  
+  \begin{itemize}
+    \item education.github.com
+    \item bitbucket.org with a .mq.edu.au email
+    \item gitlab has all of these services free, we're working on .mq.edu.au support
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{SSH keyless authentication / GUI setup}
+  
+  \begin{itemize}
+    \item https://help.github.com/articles/connecting-to-github-with-ssh/
+    \item https://desktop.github.com
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{File sharing with code review}
+  
+  \begin{itemize}
+    \item https://github.com/LibraryCarpentry/lc-webscraping/pull/27
+    \item https://github.com/FAIMS/SoftwareX/commit/\\86355fedb0f7fca5fd6f65916882bf147ba73c63\#diff-9e1159339c97548e560d49d979f82b8e
+    \item How would we get supervisors and gradstudents to use this model?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Getting a git pages site up}
+  
+  \begin{itemize}
+    \item https://github.com/mqTeXUsers/mqTeXusers.github.io
+    \item https://pages.github.com/
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Osf.io Integration}
+  The open science framework supports a github datasource.
+  \begin{itemize}
+    \item https://osf.io
+    \item http://help.osf.io/m/addons/l/837075-connect-github-to-a-project
+    \item example: https://osf.io/ncm8s/
+  \end{itemize}
+\end{frame}
 
 \end{document}
